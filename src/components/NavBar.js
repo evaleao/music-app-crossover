@@ -35,7 +35,6 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="warning" light expand="md">
         <Container>
-          <NavbarBrand className="" />
 
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
