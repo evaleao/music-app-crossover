@@ -13,6 +13,7 @@ import {
   NavLink,
   Button,
   UncontrolledDropdown,
+  Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -37,9 +38,9 @@ const NavBar = () => {
 
   return (
     <div className="nav-container">
-      <Navbar color="light" light expand="md">
+      <Navbar color="warning" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          <NavbarBrand className="" />
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -51,6 +52,36 @@ const NavBar = () => {
                   activeClassName="router-link-exact-active"
                 >
                   Home
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/Top_50_Songs"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Top 50 Songs
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/Genres"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Genres
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/Playlists"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Playlists
                 </NavLink>
               </NavItem>
               {isAuthenticated && (
