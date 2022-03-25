@@ -1,10 +1,10 @@
 import React from "react";
 
-import logo from "../assets/logo.svg";
-
+import Music from "./Music.js";
 const Hero = () => (
-  <>
-  </>
+  <div className="text-center hero my-5">
+    <Music />
+  </div>
 );
 
 export default Hero;
